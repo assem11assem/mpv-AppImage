@@ -53,6 +53,7 @@ echo "Building mpv..."
 echo "---------------------------------------------------------------"
 git clone "https://github.com/mpv-player/mpv-build.git" ./mpv-build
 cd ./mpv-build
+git checkout v0.38.0
 
 if [ "${DEVEL_RELEASE-}" = 1 ]; then
 	./use-mpv-master

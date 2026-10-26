@@ -51,7 +51,7 @@ get-debloated-pkgs --add-common --prefer-nano
 
 echo "Building mpv..."
 echo "---------------------------------------------------------------"
-git clone --branch release/0.32 --depth 1 "https://github.com/mpv-player/mpv-build.git" ./mpv-build
+git clone "https://github.com/mpv-player/mpv-build.git" ./mpv-build
 cd ./mpv-build
 
 if [ "${DEVEL_RELEASE-}" = 1 ]; then
@@ -83,6 +83,8 @@ echo "-Dpipewire=disabled"     >> ./mpv_options
 echo "-Drubberband=disabled"   >> ./mpv_options
 echo "-Dlibavdevice=disabled"  >> ./mpv_options
 echo "-Dgl-x11=enabled"  >> ./mpv_options
+echo "--enable-vdpau"  >> ./mpv_options
+echo "-Dvdpau=enabled"  >> ./mpv_options
 
 # install in /usr rather than /usr/local
 sed -i -e 's|meson setup build|meson setup build --prefix=/usr|' ./scripts/mpv-config

@@ -82,6 +82,7 @@ echo "-Dvapoursynth=disabled"  >> ./mpv_options
 echo "-Dpipewire=disabled"     >> ./mpv_options
 echo "-Drubberband=disabled"   >> ./mpv_options
 echo "-Dlibavdevice=disabled"  >> ./mpv_options
+echo "-Dgl-x11=enabled"  >> ./mpv_options
 
 # install in /usr rather than /usr/local
 sed -i -e 's|meson setup build|meson setup build --prefix=/usr|' ./scripts/mpv-config

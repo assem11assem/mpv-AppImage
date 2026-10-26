@@ -51,7 +51,7 @@ get-debloated-pkgs --add-common --prefer-nano
 
 echo "Building mpv..."
 echo "---------------------------------------------------------------"
-git clone --branch v0.32.0 "https://github.com/mpv-player/mpv-build.git" ./mpv-build
+git clone --branch release/0.32 --depth 1 "https://github.com/mpv-player/mpv-build.git" ./mpv-build
 cd ./mpv-build
 
 if [ "${DEVEL_RELEASE-}" = 1 ]; then

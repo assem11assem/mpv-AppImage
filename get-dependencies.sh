@@ -77,6 +77,7 @@ echo "--enable-muxer=matroska" >> ./ffmpeg_options
 echo "--enable-muxer=webm"     >> ./ffmpeg_options
 echo "--enable-muxer=image2"   >> ./ffmpeg_options
 echo "--disable-avdevice"      >> ./ffmpeg_options
+echo "--enable-vdpau"          >> ./ffmpeg_options
 echo "-Dlibmpv=false"          >> ./mpv_options
 echo "-Dlibbluray=disabled"    >> ./mpv_options
 echo "-Dvapoursynth=disabled"  >> ./mpv_options
@@ -84,7 +85,6 @@ echo "-Dpipewire=disabled"     >> ./mpv_options
 echo "-Drubberband=disabled"   >> ./mpv_options
 echo "-Dlibavdevice=disabled"  >> ./mpv_options
 echo "-Dgl-x11=enabled"  >> ./mpv_options
-echo "--enable-vdpau"  >> ./mpv_options
 echo "-Dvdpau=enabled"  >> ./mpv_options
 
 # install in /usr rather than /usr/local

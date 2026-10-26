@@ -20,7 +20,7 @@ pacman -Syu --noconfirm \
 	libogg            \
 	libplacebo        \
 	libpulse          \
-	libvdpau
+	libvdpau          \
 	libx11            \
 	libxext           \
 	libxkbcommon      \
